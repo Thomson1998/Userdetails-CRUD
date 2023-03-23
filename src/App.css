@@ -1,38 +1,102 @@
 .App {
   text-align: center;
 }
+/* body{
+  background-color: black;
+} */
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.title{
+  padding: 15px;
+  font-size: 20px;
+  font-weight: bolder; 
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.navstyles{
+  padding: 25px;
+  width: 100%;
+  background: linear-gradient(#02aab0, #00cdac);
+  display: flex;
+  justify-content: flex-start;
+  gap: 1rem;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.nav-button{
+  border: none;
+  color: black;
+  font-weight: bolder;
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 5px;
+  background-color: inherit;
+  cursor: pointer;
+
+}
+
+.nav-button:hover{
+  background: linear-gradient(#1f1c18, #8e0e00);
+  
+}
+
+footer{
+  padding: 27px;
+  width: 100%;
+  font-size: larger;
+  font-weight: bolder;
+  border: 1px solid black;
+  background: linear-gradient(#02aab0, #00cdac);
+}
+
+.user-content{
+  margin: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 1rem;
+}
+
+.user-card{
+  background: linear-gradient(#02aab0, #00cdac);
+  border-radius: 10px;
+  width: 250px;
+  height: 250px;
+
+}
+
+.user-card:hover{
+box-shadow: 10px 10px 10px 10px black;
+}
+
+.btn{
+  padding: 10px;
+  margin: 5px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  
+}
+
+.view-btn:hover{
+  background: linear-gradient(#2eaafa, #1f2f98);
+}
+
+.edit-btn:hover{
+  background: linear-gradient(#00bd56, #f9fd50); 
+}
+
+.del-btn:hover{
+  background: linear-gradient(#e65758, #771d32); 
+}
+
+.children{
+  height: 90vh;
+  margin: 1vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-between;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+input{
+ margin: 5px;
+ padding: 5px;
+ border-radius: 5px;
 }
