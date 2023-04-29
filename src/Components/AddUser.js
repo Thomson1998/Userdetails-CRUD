@@ -6,31 +6,26 @@ export function AddUser({user, setUser}){
     const history = useHistory()
     const [id, setid] = useState("");
     const [name, setName] = useState("");
-    const [batch, setBatch] = useState("");
-    const [email, setEmail] = useState("");
-    const [experience, setExperience] = useState();
+    const [standard, setStandard] = useState("");
+    const [section, setSection] = useState("");
+    const [rank, setRank] = useState();
 
     const addNewUser = ()=>{
         const newUser = {
         id,
         name,
-        batch,
-        email,
-        experience,
+        standard,
+        section,
+        rank,
         }
         console.log(newUser)
        setUser([...user, newUser]) 
-    //    setid("");
-    //    setName("");
-    //    setBatch("");
-    //    setEmail("");
-    //    setExperience("");
        history.push("/")
 
     }
     return(
         <BaseApp
-        title={"Add A New User"}>  
+        title={"Add A New Student"}>  
                   <div>
             
             <input 
@@ -46,22 +41,22 @@ export function AddUser({user, setUser}){
             onChange={(event)=>setName(event.target.value)}
             />
             <input 
-            placeholder="Batch"
-            value={batch}
+            placeholder="Standard"
+            value={standard}
             type="text"
-            onChange={(event)=>setBatch(event.target.value)}
+            onChange={(event)=>setStandard(event.target.value)}
             />
             <input 
-            placeholder="Email"
-            value={email}
+            placeholder="Section"
+            value={section}
             type="text"
-            onChange={(event)=>setEmail(event.target.value)}
+            onChange={(event)=>setSection(event.target.value)}
             />
             <input 
-            placeholder="Experience"
-            value={experience}
+            placeholder="Rank"
+            value={rank}
             type="number"
-            onChange={(event)=>setExperience(event.target.value)}
+            onChange={(event)=>setRank(event.target.value)}
             />
             <button
             onClick={addNewUser}

@@ -17,7 +17,15 @@ export default function BaseApp({title, styles, children}){
                    onClick={()=>history.push("/")}
                    >Dashboard</button>
                 </span>
+                <span>
+                   <button className="nav-button"
+                   onClick={()=>history.push("/teacherdetails")}
+                   >Teacher Details</button>
+                </span>
             </div>
+            <div className="schoolname">
+                    <b>Happy Valley Higher Secondary School</b>
+                </div>
             <div className="title">{title}</div>
             </div>
 

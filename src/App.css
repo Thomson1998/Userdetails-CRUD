@@ -14,7 +14,7 @@
 .navstyles{
   padding: 25px;
   width: 100%;
-  background: linear-gradient(#02aab0, #00cdac);
+  background: linear-gradient(#eecda3, #ef629f);
   display: flex;
   justify-content: flex-start;
   gap: 1rem;
@@ -29,11 +29,12 @@
   border-radius: 5px;
   background-color: inherit;
   cursor: pointer;
+  color: white;
 
 }
 
 .nav-button:hover{
-  background: linear-gradient(#1f1c18, #8e0e00);
+  background: linear-gradient(#000428, #004e92);
   
 }
 
@@ -43,7 +44,8 @@ footer{
   font-size: larger;
   font-weight: bolder;
   border: 1px solid black;
-  background: linear-gradient(#02aab0, #00cdac);
+  background: linear-gradient(#eecda3, #ef629f);
+  color: black;
 }
 
 .user-content{
@@ -52,13 +54,15 @@ footer{
   flex-wrap: wrap;
   justify-content: space-around;
   gap: 1rem;
+  text-align: center;
 }
 
 .user-card{
-  background: linear-gradient(#02aab0, #00cdac);
+  background: linear-gradient(#eecda3, #ef629f);
   border-radius: 10px;
   width: 250px;
   height: 250px;
+  text-align: center;
 
 }
 
@@ -99,4 +103,11 @@ input{
  margin: 5px;
  padding: 5px;
  border-radius: 5px;
+}
+
+.schoolname{
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  font-size: x-large;
 }

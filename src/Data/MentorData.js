@@ -1,0 +1,51 @@
+export const MentorData = [
+    {
+        id: "1",
+        name: "Sivaraman",
+        subject: "Tamil",
+        email: "sivaraman@gmail.com",
+        experience: 7,
+    },
+    {
+        id: "2",
+        name: "Richard",
+        subject: "English",
+        email: "richard@gmail.com",
+        experience: 5,
+    },
+    {
+        id: "3",
+        name: "Basith",
+        subject: "Physics",
+        email: "basith@gmail.com",
+        experience: 8,
+    },
+    {
+        id: "4",
+        name: "Geetha",
+        subject: "Chemistry",
+        email: "geetha@gmail.com",
+        experience: 6,
+    },
+    {
+        id: "5",
+        name: "Hemanika",
+        subject: "Biology",
+        email: "hemanika@gmail.com",
+        experience: 4,
+    },
+    {
+        id: "6",
+        name: "Sanjay",
+        subject: "Mathematics",
+        email: "sanjay@gmail.com",
+        experience: 5,
+    },
+    {
+        id: "7",
+        name: "Jebasingh",
+        subject: "Physical Training",
+        email: "jeba@gmail.com",
+        experience: 5,
+    },
+]

@@ -1,7 +1,6 @@
-import React, { useState } from "react";
+import React from "react";
 import { useHistory } from "react-router-dom";
 import BaseApp from "../core/base";
-import { AddUser } from "./AddUser";
 
 export default function UserComponent({user, setUser}){
     const history = useHistory()
@@ -12,14 +11,14 @@ export default function UserComponent({user, setUser}){
     } 
     return(
         <BaseApp
-        title="User Info">
+        title="Student Info">
         <div className="user-content">
             {user.map((person, idx)=>(
                 <div key={idx} className="user-card">
                     <h1>{person.name}</h1>
-                    <p>Batch : {person.batch}</p>
-                    <p>Email : {person.email}</p>
-                    <p>Exp : {person.experience}</p>
+                    <p><b>Standard</b> : {person.standard}</p>
+                    <p><b>Section</b> : {person.section}</p>
+                    <p><b>Rank</b> : {person.rank}</p>
 
                     <div className="btn-group">
                         <button className="btn edit-btn"

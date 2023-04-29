@@ -5,9 +5,9 @@ import BaseApp from "../core/base";
 export const EditUser = ({user, setUser}) => {
     const [idx, setidx] = useState("");
     const [name, setName] = useState("");
-    const [batch, setBatch] = useState("");
-    const [email, setEmail] = useState("");
-    const [experience, setExperience] = useState();
+    const [standard, setStandard] = useState("");
+    const [section, setSection] = useState("");
+    const [rank, setRank] = useState();
 
     const {id} = useParams();
     const history = useHistory()
@@ -16,9 +16,9 @@ export const EditUser = ({user, setUser}) => {
     useEffect(()=>{
      setidx(selectedUser.id)
      setName(selectedUser.name)
-     setBatch(selectedUser.batch)
-     setEmail(selectedUser.email)
-     setExperience(selectedUser.experience)
+     setStandard(selectedUser.standard)
+     setSection(selectedUser.section)
+     setRank(selectedUser.rank)
     },[])
 
     const updateUser = () =>{
@@ -26,9 +26,9 @@ export const EditUser = ({user, setUser}) => {
        const editedData = {
        id : idx,
         name,
-        batch,
-        email,
-        experience,
+        standard,
+        section,
+        rank,
        } 
 
        user[editIndex] = editedData
@@ -54,22 +54,22 @@ export const EditUser = ({user, setUser}) => {
             onChange={(event)=>setName(event.target.value)}
             />
             <input 
-            placeholder="Batch"
-            value={batch}
+            placeholder="Standard"
+            value={standard}
             type="text"
-            onChange={(event)=>setBatch(event.target.value)}
+            onChange={(event)=>setStandard(event.target.value)}
             />
             <input 
-            placeholder="Email"
-            value={email}
+            placeholder="Section"
+            value={section}
             type="text"
-            onChange={(event)=>setEmail(event.target.value)}
+            onChange={(event)=>setSection(event.target.value)}
             />
             <input 
-            placeholder="Experience"
-            value={experience}
+            placeholder="Rank"
+            value={rank}
             type="number"
-            onChange={(event)=>setExperience(event.target.value)}
+            onChange={(event)=>setRank(event.target.value)}
             />
             <button
             onClick={updateUser}

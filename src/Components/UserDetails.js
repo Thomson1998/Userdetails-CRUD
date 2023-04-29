@@ -12,9 +12,9 @@ export function UserDetails({user}){
             
                 <div className="user-card">
                     <h1>{person.name}</h1>
-                    <p>Batch : {person.batch}</p>
-                    <p>Email : {person.email}</p>
-                    <p>Exp : {person.experience}</p>
+                    <p>Standard : {person.standard}</p>
+                    <p>Section : {person.section}</p>
+                    <p>Rank : {person.rank}</p>
                 </div>
         </div>   
        </BaseApp> 
